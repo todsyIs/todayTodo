@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <>
       <Header />
-      <main className="center justify-center  max-w-7xl h-screen">
+      <main className="center justify-center  max-w-7xl pt-80 pb-80">
         <article className="flex   flex-col  justify-center mx-auto  ">
           <p className=" main-hello ">안녕하세요🖐</p>
           <p className=" main-hello ">오늘의 할일을 적어볼까요?</p>
@@ -17,7 +17,7 @@ const Main = () => {
           </form>
         </article>
       </main>
-      <Footer />
+      <Footer link="/about" />
     </>
   );
 };
