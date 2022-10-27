@@ -5,11 +5,10 @@ import { Link } from "react-router-dom";
 
 const Footer = ({ link }) => {
   return (
-    <footer className="flex items-center justify-between mx-4  pb-12 ">
+    <footer className="flex items-center  justify-end mx-4  pb-12 ">
       <Link to={link}>
         <RoundBtn />
       </Link>
-      <MainBtn />
     </footer>
   );
 };

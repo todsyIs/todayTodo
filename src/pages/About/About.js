@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Header />
-      <main className="center justify-center  max-w-7xl   pt-20 pb-20">
+      <main className="center justify-center  max-w-7xl pt-44 pb-32">
         <article className="flex   flex-col  items-start  mx-auto  ">
           <p className=" text-4xl font-semibold">오늘은 이런 페이지에요</p>
           <section className=" flex items-center justify-center ">
