@@ -18,8 +18,8 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto",
         "useTabs": false,
+        "endOfLine": "auto",
       }
     ]
   }
