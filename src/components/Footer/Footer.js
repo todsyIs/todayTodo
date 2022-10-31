@@ -1,6 +1,5 @@
 import React from "react";
 import RoundBtn from "../RoundBtn/RoundBtn";
-import MainBtn from "../MainBtn/MainBtn";
 import { Link } from "react-router-dom";
 
 const Footer = ({ link }) => {

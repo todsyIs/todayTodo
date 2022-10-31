@@ -3,14 +3,16 @@ import Footer from "../../components/Footer/Footer";
 import MainBtn from "../../components/MainBtn/MainBtn";
 import { ModalContext } from "../../Context/ModalContext/ModalContext";
 import { useContext } from "react";
-import LoginJoinModal from "../../components/LoginJoinModal/LoginJoinModal";
+import ModalContainer from "../../components/ModalContainer/ModalContainer";
 
 const Main = () => {
   const { isOpen, setIsOpen } = useContext(ModalContext);
+  const { isJoin, setIsJoin } = useContext(ModalContext);
+
   const handleModal = () => {
     setIsOpen(prve => !prve);
   };
-
+  console.log(isOpen);
   return (
     <>
       <Header />
@@ -21,7 +23,14 @@ const Main = () => {
           <div className="flex justify-between mt-5">
             <MainBtn title="바로 입력하러가기" />
             <MainBtn title="로그인하고 시작하기" handleClick={handleModal} />
-            <LoginJoinModal isOpen={isOpen} setIsOpen={setIsOpen} />
+            {isOpen && (
+              <ModalContainer
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                isJoin={isJoin}
+                setIsJoin={setIsJoin}
+              />
+            )}
           </div>
         </article>
       </main>
