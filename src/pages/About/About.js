@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import Card from "../../components/Card/Card";
+import Card from "../../components/About/Card/Card";
 const About = () => {
   return (
     <>

@@ -1,18 +1,17 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import MainBtn from "../../components/MainBtn/MainBtn";
+import MainBtn from "../../components/Main/MainBtn/MainBtn";
 import { ModalContext } from "../../Context/ModalContext/ModalContext";
 import { useContext } from "react";
 import ModalContainer from "../../components/ModalContainer/ModalContainer";
 
 const Main = () => {
-  const { isOpen, setIsOpen } = useContext(ModalContext);
-  const { isJoin, setIsJoin } = useContext(ModalContext);
+  const { isOpen, setIsOpen, isJoin } = useContext(ModalContext);
 
   const handleModal = () => {
     setIsOpen(prve => !prve);
   };
-  console.log(isOpen);
+
   return (
     <>
       <Header />
@@ -28,7 +27,6 @@ const Main = () => {
                 isOpen={isOpen}
                 setIsOpen={setIsOpen}
                 isJoin={isJoin}
-                setIsJoin={setIsJoin}
               />
             )}
           </div>
