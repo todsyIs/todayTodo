@@ -1,5 +1,5 @@
 import React from "react";
-import TodoShare from '../../components/TodoShare/TodoShare';
+
 
 const TodoItem = () => {
   return (
@@ -12,14 +12,13 @@ const TodoItem = () => {
       <div className="flex flex-row flex-initial float-right">
         <button 
           type='button'
-          className="mr-3 bg-transparent py-0.5 px-1 border border-gray-300 rounded" 
+          className="text-sm w-12 mr-1/12 bg-transparent py-0.5 px-1 border border-gray-200 rounded mr-2" 
         >수정</button>
         <button 
           type='button' 
-          className="bg-transparent py-0.5 px-1 border border-gray-300 rounded"
+          className="text-sm w-12 bg-transparent py-0.5 px-1 border border-gray-200 rounded"
         >삭제</button>
       </div>
-      <TodoShare />
     </div>
   );
 };
