@@ -20,3 +20,19 @@ module.exports = {
       여기 안에 screens, colors 등 내용물 넣기 
     }
 ```
+
+# 메인페이지 레이아웃 (디두)
+
+### 1. 메인 페이지 및 로그인, 회원 가입 페이지 레이아웃 완료
+
+### 2. 메인 페이제 컴포넌트
+
+- Login,Join
+- MainBtn,MainForm,MainInput
+- Header,Footer
+- About > Card
+- ModalContainer
+
+### 3. 수정 필요한 부분
+
+전체 프로젝트 사이즈 정확히 정하기
